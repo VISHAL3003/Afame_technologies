@@ -1,0 +1,169 @@
+@import "../../vars.css";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    margin-bottom: 4vw;
+}
+
+.bottomContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    position: relative;
+}
+
+.bottomContainer span {
+    height: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.bottomContainer:hover span {
+    transform: translateY(-25px);
+}
+
+.bottomContainer:hover .arrow {
+    transform: translateY(-18px);
+}
+
+.arrow {
+    height: 3vw;
+    width: 50px;
+    background-color: black;
+    clip-path: path("M3.27869 35.7955V0H4.72131V35.7955H8L4 42L0 35.7955H3.27869Z");
+    margin-left: 46px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.animation {
+    z-index: 1;
+    height: 7vw;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    z-index: 1;
+    color: var(--color-text-gray);
+    margin-left: 5px;
+    
+}
+
+.title:first-child {
+    animation: slide 12s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes slide {
+    0%{
+        margin-top: 0px;
+    }
+    5%{
+        margin-top: 0px;
+    }
+    10%{
+        margin-top: 0px;
+    }
+    20%{
+        margin-top: -120px;
+    }
+    80%{
+        margin-top: -120px;
+    }
+    90%{
+        margin-top: 0px;
+    }
+    95%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.subTitle {
+    z-index: 5;
+}
+
+.subTitle p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 830px) {
+    .title {
+        font-size: 75px;
+    }
+
+    .animation {
+        height: 75px;
+    }
+
+    .title:first-child {
+        animation: slide 12s infinite;
+        animation-delay: 3s;
+    }
+
+    @keyframes slide {
+        0%{
+            margin-top: 0px;
+        }
+        5%{
+            margin-top: 0px;
+        }
+        10%{
+            margin-top: 0px;
+        }
+        20%{
+            margin-top: -95px;
+        }
+        80%{
+            margin-top: -95px;
+        }
+        90%{
+            margin-top: 0px;
+        }
+        95%{
+            margin-top: 0px;
+        }
+        100%{
+            margin-top: 0px;
+        }
+    }
+
+    .bottomContainer span {
+        height: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    .arrow {
+        height: 20vw;
+    }
+}
+
+

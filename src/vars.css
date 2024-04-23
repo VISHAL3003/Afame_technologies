@@ -1,0 +1,24 @@
+:root {
+  --color-text: #fff;
+  --color-text-gray: rgb(53, 53, 53);
+  --color-text-gray1: rgb(112, 107, 107);
+  --color-text-gray2: rgb(138, 134, 134); 
+
+  --font-roboto: "Roboto";
+
+  --about-shape: #264081;
+  --zIndex-10: 10;
+  --grad: linear-gradient(
+    to right,
+    rgba(248,248,248,0.075),
+    rgba(248,248,248,0)
+  );
+
+  --grad-s: linear-gradient(
+    to bottom,
+    rgba(248,248,248,0.075),
+    rgba(248,248,248,0.075),
+    rgba(248,248,248,0.0),
+    rgba(248,248,248,0.0)
+  );
+}

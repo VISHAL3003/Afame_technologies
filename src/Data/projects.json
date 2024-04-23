@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Amazon Clone",
+        "imageSrc": "projects/bg4.jpg",
+        "skills": ["React", "Express", "Node", "MongoDB"],
+        "source": "https://github.com/VISHAL3003/Amazon-MERN-"
+    },
+    {
+        "title": "YouTube Clone",
+        "imageSrc": "projects/bg3.jpg",
+        "skills": ["HTML", "CSS"],
+        "source": "https://github.com/VISHAL3003/YouTube"
+    },
+    {
+        "title": "SUDOKU GAME",
+        "imageSrc": "projects/bg2.jpg",
+        "skills": ["C++"],
+        "source": "https://github.com/VISHAL3003/Mini-Projects/tree/main/Sudoku"
+    },
+    {
+        "title": "Blog Website",
+        "imageSrc": "projects/bg1.jpg",
+        "skills": ["Flask", "Bootstrap"],
+        "source": "https://github.com/VISHAL3003/Blog-Website"
+    }
+]

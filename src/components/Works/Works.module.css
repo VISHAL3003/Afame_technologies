@@ -1,0 +1,82 @@
+@import "../../vars.css";
+
+.container {
+  height: 100%;
+  display: flex;
+  column-gap: 50px;
+  row-gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15pc;
+  z-index: 1;
+  position: relative;
+}
+
+.projects {
+  margin-top: 10vw;
+  width: 50vw;
+  height: 28vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.projects img {
+  width: inherit;
+  height: inherit;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  
+}
+
+.projects:hover img {
+  filter: grayscale(0);
+}
+
+.projects:hover {
+  transform: scale(1.1);
+}
+
+.projects span {
+  color: var(--color-text);
+  position: absolute;
+  font-size: 70px;
+  font-family: var(--font-roboto);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    row-gap: 0px;
+  }
+
+  .projects {
+    width: 24pc;
+    height: 18pc;
+    margin-top: 6pc;
+  }
+
+  .projects span {
+    font-size: 50px;
+  }
+
+  .projects img {
+    filter: grayscale(0);
+  }
+
+  .projects:hover img {
+    filter: grayscale(0);
+  }
+
+  .projects:hover {
+    transform: scale(1);
+  }
+}

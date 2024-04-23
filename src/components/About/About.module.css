@@ -1,0 +1,140 @@
+@import "../../vars.css";
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #203260;
+  position: relative;
+}
+
+.content {
+  color: var(--color-text);
+  z-index: 10;
+  position: relative;
+}
+
+.content img {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  z-index: var(--zIndex-10);
+  margin-top: 10vw;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7pc;
+  z-index: var(--zIndex-10);
+}
+
+.titleSection span {
+  font-family: "Times New Roman", Times, serif;
+  color: #888;
+  font-size: 25px;
+  z-index: var(--zIndex-10);
+}
+
+.titleSection h1 {
+  font-size: 80px;
+  z-index: var(--zIndex-10);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  z-index: var(--zIndex-10);
+  position: relative;
+}
+.description p {
+  width: 22vw;
+  z-index: var(--zIndex-10);
+  font-size: 25px;
+  margin-left: 27vw;
+  margin-top: 3vw;
+}
+
+
+.backgroundShapes h1 {
+  font-size: 35pc;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+}
+
+.v {
+  top: 0;
+  left: 29vw;
+  font-weight: bold;
+}
+
+.slash {
+  width: 40pc;
+  height: 15px;
+  background: var(--grad);
+  position: absolute;
+  transform: rotate(120deg);
+  top: 20vw;
+  left: 32vw;
+}
+
+.s {
+  top: 7vw;
+  left: 53vw;
+  font-weight: bold;
+}
+
+.v {
+  color: rgba(248, 248, 248, 0.075);
+}
+.s {
+  background: var(--grad-s);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 830px) {
+  .titleSection {
+    padding-top: 3pc;
+  }
+
+  .titleSection h1 {
+    font-size: 50px;
+  }
+
+  .description p {
+    width: 20pc;
+    margin-top: 3pc;
+    margin-left: 3pc;
+    font-size: 22px;
+  }
+
+  .backgroundShapes h1 {
+    font-size: 20pc;
+  }
+
+  .v {
+    top: -18pc;
+    left: 0;
+  }
+
+  .slash {
+    top: -5pc;
+    left: 0;
+    width: 25pc;
+  }
+
+  .s {
+    top: -9pc;
+    left: 12pc;
+  }
+
+  .content img {
+    height: 20pc;
+  }
+
+  .container {
+    height: 100%;
+  }
+}

@@ -1,0 +1,136 @@
+@import "../../vars.css";
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(230, 238, 249);
+  position: relative;
+  padding-bottom: 1vw;
+}
+
+.titleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4pc;
+  position: relative;
+}
+
+.titleSection span {
+  font-family: "Times New Roman", Times, serif;
+  color: #888;
+  font-size: 45px;
+  z-index: var(--zIndex-10);
+}
+
+.description {
+  position: relative;
+}
+
+.edu1 {
+  margin-left: 25vw;
+  margin-top: 4vw;
+  width: 29vw;
+  z-index: var(--zIndex-10);
+  padding: 1vw;
+}
+
+.number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.number span {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.line {
+  width: 70px;
+  height: 3px;
+  background-color: black;
+}
+
+.edu1 h3 {
+  font-size: 30px;
+  width: 95vw;
+  color: var(--color-text-gray);
+  text-transform: uppercase;
+}
+
+.edu1 h4 {
+  width: 28pc;
+  font-size: 20px;
+  color: var(--color-text-gray1);
+}
+
+.edu2 {
+  margin-left: 51vw;
+  margin-top: 0;
+  width: 35pc;
+  z-index: var(--zIndex-10);
+  padding: 30px;
+}
+
+.edu2 h3 {
+  font-size: 30px;
+  color: var(--color-text-gray);
+  text-transform: uppercase;
+}
+
+.edu2 h4 {
+  width: 30pc;
+  font-size: 20px;
+  color: var(--color-text-gray1);
+}
+
+.edu3 {
+  margin-left: 25vw;
+  margin-bottom: 5pc;
+  width: 35pc;
+  z-index: var(--zIndex-10);
+  padding: 30px;
+}
+
+.edu3 h3 {
+  font-size: 30px;
+  color: var(--color-text-gray);
+  text-transform: uppercase;
+}
+
+.edu3 h4 {
+  width: 30pc;
+  font-size: 20px;
+  color: var(--color-text-gray1);
+}
+
+@media screen and (max-width: 830px) {
+  .edu1,
+  .edu2,
+  .edu3 {
+    margin-left: 0pc;
+    margin-top: 2pc;
+    margin-bottom: 3pc;
+    padding: 20px;
+  }
+
+  .edu1 h3,
+  .edu2 h3,
+  .edu3 h3 {
+    font-size: 25px;
+  }
+
+  .edu1 h4,
+  .edu2 h4,
+  .edu3 h4 {
+    width: 21pc;
+    font-size: 20px;
+  }
+
+  .number span {
+    font-size: 30px;
+  }
+}
